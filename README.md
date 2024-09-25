@@ -15,7 +15,7 @@ API testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-
 
 - See [Java SE 8 Archive Downloads](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html), download the proper version for your OS and your JMeter and install it by keeping the preferenced options. 
 - See [JMeter download](https://jmeter.apache.org/download_jmeter.cgi) and download apache-jmeter-5.6.3.zip. Extract it in the prorject directory. Access bin folder and look for ApacheJMeter.jar file. Double click it to execute it.
-- See [JMeter Plugins Manager](https://jmeter-plugins.org/wiki/PluginsManager/) and download jmeter-plugins-manager-1.10.jar. Paste it into JMeter's lib/ext directory. Restart JMeter.
+- See [JMeter Plugins Manager](https://jmeter-plugins.org/wiki/PluginsManager/) and download jmeter-plugins-manager-1.10.jar. Paste it into JMeter's lib/ext directory. Restart JMeter to conclude the installation of JMeter Plugins Manager.
 - Hit :point_right:**Options**, :point_right:**Plugins Manager**, :point_right:**Available Plugins**, check :white_check_mark:**jpgc - Standard Set** and :point_right:**Apply Changes and Restart JMeter** to install jpgc - Standard Set plugin. 
 
 # Tests:
