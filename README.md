@@ -20,7 +20,7 @@ API testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-
 
 # Tests:
 
-- Configure your request on JMeter and send it.
+- On Windows Command Prompt, execute ```cd apache-jmeter-5.6.3/bin && jmeter -n -t expandtesting.jmx -l ../../csv_reports/report.csv -e -o ../../reports``` to run expandtesting collection, generate a .csv report in csv_reports folder and generate a .html report in reports folder.
 
 # Support:
 
@@ -34,6 +34,7 @@ API testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-
 - [Jmeter 5.5 error with assertion value type, string not equal to int](https://stackoverflow.com/a/74537909/10519428)
 - [__RandomFromMultipleVars](https://jmeter.apache.org/usermanual/functions.html#__RandomFromMultipleVars)
 - [Handle negative cases in JMETER, for example my expected output response is 400](https://stackoverflow.com/a/59533081/10519428)
+- [13 | JMeter | HTML Reports from GUI & CMD |](https://www.youtube.com/watch?v=S8eO-jrQFpQ)
 
 # Tips:
 

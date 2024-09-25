@@ -1,0 +1,31 @@
+name: expandtesting
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  action_build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run JMeter Action on a test
+        uses: rbhadti94/apache-jmeter-action@v0.5.0
+        with:
+          testFilePath: apache-jmeter-5.6.3/bin/expandtesting.jmx
+          outputReportsFolder: reports/
+          args: "--loglevel INFO"
+
+      - name: Run JMeter Action on other tests
+        uses: rbhadti94/apache-jmeter-action@v0.5.0
+        with:
+          testFilePath: other-tests/
+          outputReportsFolder: other_reports/
+          args: "--loglevel INFO"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jmeter-test-results
+          path: reports/
