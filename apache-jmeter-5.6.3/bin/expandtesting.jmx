@@ -24,7 +24,7 @@
         </elementProp>
       </kg.apc.jmeter.threads.SteppingThreadGroup>
       <hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -61,7 +61,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -4534,74 +4534,6 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <kg.apc.jmeter.threads.SteppingThreadGroup guiclass="kg.apc.jmeter.threads.SteppingThreadGroupGui" testclass="kg.apc.jmeter.threads.SteppingThreadGroup" testname="Stress test config">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <stringProp name="ThreadGroup.num_threads">1000</stringProp>
-        <stringProp name="Threads initial delay">1</stringProp>
-        <stringProp name="Start users count">100</stringProp>
-        <stringProp name="Start users count burst">100</stringProp>
-        <stringProp name="Start users period">1</stringProp>
-        <stringProp name="Stop users count">50</stringProp>
-        <stringProp name="Stop users period">1</stringProp>
-        <stringProp name="flighttime">30</stringProp>
-        <stringProp name="rampUp">1</stringProp>
-        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-          <intProp name="LoopController.loops">-1</intProp>
-          <boolProp name="LoopController.continue_forever">false</boolProp>
-        </elementProp>
-      </kg.apc.jmeter.threads.SteppingThreadGroup>
-      <hashTree/>
-      <kg.apc.jmeter.threads.SteppingThreadGroup guiclass="kg.apc.jmeter.threads.SteppingThreadGroupGui" testclass="kg.apc.jmeter.threads.SteppingThreadGroup" testname="Spike test config">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <stringProp name="ThreadGroup.num_threads">10000</stringProp>
-        <stringProp name="Threads initial delay">1</stringProp>
-        <stringProp name="Start users count">165</stringProp>
-        <stringProp name="Start users count burst">165</stringProp>
-        <stringProp name="Start users period">1</stringProp>
-        <stringProp name="Stop users count">165</stringProp>
-        <stringProp name="Stop users period">1</stringProp>
-        <stringProp name="flighttime">0</stringProp>
-        <stringProp name="rampUp">1</stringProp>
-        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-          <intProp name="LoopController.loops">-1</intProp>
-          <boolProp name="LoopController.continue_forever">false</boolProp>
-        </elementProp>
-      </kg.apc.jmeter.threads.SteppingThreadGroup>
-      <hashTree/>
-      <kg.apc.jmeter.threads.SteppingThreadGroup guiclass="kg.apc.jmeter.threads.SteppingThreadGroupGui" testclass="kg.apc.jmeter.threads.SteppingThreadGroup" testname="Breakpoint test config">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <stringProp name="ThreadGroup.num_threads">100000</stringProp>
-        <stringProp name="Threads initial delay">1</stringProp>
-        <stringProp name="Start users count">100</stringProp>
-        <stringProp name="Start users count burst">100</stringProp>
-        <stringProp name="Start users period">5</stringProp>
-        <stringProp name="Stop users count">50</stringProp>
-        <stringProp name="Stop users period">5</stringProp>
-        <stringProp name="flighttime">7200</stringProp>
-        <stringProp name="rampUp">5</stringProp>
-        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-          <intProp name="LoopController.loops">-1</intProp>
-          <boolProp name="LoopController.continue_forever">false</boolProp>
-        </elementProp>
-      </kg.apc.jmeter.threads.SteppingThreadGroup>
-      <hashTree/>
-      <kg.apc.jmeter.threads.SteppingThreadGroup guiclass="kg.apc.jmeter.threads.SteppingThreadGroupGui" testclass="kg.apc.jmeter.threads.SteppingThreadGroup" testname="Soak test config">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <stringProp name="ThreadGroup.num_threads">1000</stringProp>
-        <stringProp name="Threads initial delay">1</stringProp>
-        <stringProp name="Start users count">5</stringProp>
-        <stringProp name="Start users count burst">5</stringProp>
-        <stringProp name="Start users period">1</stringProp>
-        <stringProp name="Stop users count">5</stringProp>
-        <stringProp name="Stop users period">1</stringProp>
-        <stringProp name="flighttime">86400</stringProp>
-        <stringProp name="rampUp">1</stringProp>
-        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-          <intProp name="LoopController.loops">-1</intProp>
-          <boolProp name="LoopController.continue_forever">false</boolProp>
-        </elementProp>
-      </kg.apc.jmeter.threads.SteppingThreadGroup>
-      <hashTree/>
     </hashTree>
   </hashTree>
 </jmeterTestPlan>
