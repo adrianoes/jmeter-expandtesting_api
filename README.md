@@ -41,4 +41,6 @@ API testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-
 # Tips:
 
 - UI and API tests to send password reset link to user's email and API tests to verify a password reset token and reset a user's password must be tested manually as they rely on e-mail verification. 
+- JMeter, even with the jpgc - Standard Set plugin support, is not able to execute a ramp down procedure. Threads are abruptly removed according to the number of threads to be removed per second.
+- Stteping thread groups are added for Load, Stress, Spike, Breakpoint and Soak test types. To test a different type of test, copy all of the content from one stteping thread group to the one that must be tested.
 
