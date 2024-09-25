@@ -35,6 +35,8 @@ API testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-
 - [__RandomFromMultipleVars](https://jmeter.apache.org/usermanual/functions.html#__RandomFromMultipleVars)
 - [Handle negative cases in JMETER, for example my expected output response is 400](https://stackoverflow.com/a/59533081/10519428)
 - [13 | JMeter | HTML Reports from GUI & CMD |](https://www.youtube.com/watch?v=S8eO-jrQFpQ)
+- [How do I run two commands in one line in Windows CMD?](https://stackoverflow.com/a/8055390/10519428)
+- [Apache JMeter Github Action](https://github.com/marketplace/actions/apache-jmeter)
 
 # Tips:
 
