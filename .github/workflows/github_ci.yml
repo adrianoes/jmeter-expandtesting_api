@@ -17,16 +17,10 @@ jobs:
       - name: Run JMeter Action on a test
         uses: rbhadti94/apache-jmeter-action@v0.5.0
         with:
-          testFilePath: /expandtesting.jmx
+          testFilePath: expandtesting.jmx
           outputReportsFolder: reports/
           args: "--loglevel INFO"
-
-      - name: Run JMeter Action on other tests
-        uses: rbhadti94/apache-jmeter-action@v0.5.0
-        with:
-          testFilePath: other-tests/
-          outputReportsFolder: other_reports/
-          args: "--loglevel INFO"
+          plugins: "jpgc-standard"
 
       - uses: actions/upload-artifact@v4
         with:
