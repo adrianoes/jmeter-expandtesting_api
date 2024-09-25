@@ -1154,8 +1154,8 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
 	&quot;name&quot;: &quot;@&quot;,       &#xd;
-     &quot;phone&quot;: &quot;${__RandomString(12,1234567890)}&quot;,&#xd;
-     &quot;company&quot;: &quot;${__RandomString(20,abcdefghijklmnopqrstuvwxyz1234567890)}&quot;&#xd;
+     &quot;phone&quot;: &quot;${__RandomString(12,1234567890,user_phone)}&quot;,&#xd;
+     &quot;company&quot;: &quot;${__RandomString(20,abcdefghijklmnopqrstuvwxyz1234567890,user_company)}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -1265,9 +1265,9 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-	&quot;name&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyz)}&quot;,         &#xd;
-     &quot;phone&quot;: &quot;${__RandomString(12,1234567890)}&quot;,&#xd;
-     &quot;company&quot;: &quot;${__RandomString(20,abcdefghijklmnopqrstuvwxyz1234567890)}&quot;&#xd;
+	&quot;name&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyz,user_name)}&quot;,         &#xd;
+     &quot;phone&quot;: &quot;${__RandomString(12,1234567890,user_phone)}&quot;,&#xd;
+     &quot;company&quot;: &quot;${__RandomString(20,abcdefghijklmnopqrstuvwxyz1234567890,user_company)}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>

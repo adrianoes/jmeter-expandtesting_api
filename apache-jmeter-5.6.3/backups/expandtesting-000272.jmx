@@ -1154,8 +1154,8 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
 	&quot;name&quot;: &quot;@&quot;,       &#xd;
-     &quot;phone&quot;: &quot;${__RandomString(12,1234567890)}&quot;,&#xd;
-     &quot;company&quot;: &quot;${__RandomString(20,abcdefghijklmnopqrstuvwxyz1234567890)}&quot;&#xd;
+     &quot;phone&quot;: &quot;${__RandomString(12,1234567890,user_phone)}&quot;,&#xd;
+     &quot;company&quot;: &quot;${__RandomString(20,abcdefghijklmnopqrstuvwxyz1234567890,user_company)}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -1265,9 +1265,9 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-	&quot;name&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyz)}&quot;,         &#xd;
-     &quot;phone&quot;: &quot;${__RandomString(12,1234567890)}&quot;,&#xd;
-     &quot;company&quot;: &quot;${__RandomString(20,abcdefghijklmnopqrstuvwxyz1234567890)}&quot;&#xd;
+	&quot;name&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyz,user_name)}&quot;,         &#xd;
+     &quot;phone&quot;: &quot;${__RandomString(12,1234567890,user_phone)}&quot;,&#xd;
+     &quot;company&quot;: &quot;${__RandomString(20,abcdefghijklmnopqrstuvwxyz1234567890,user_company)}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -1590,7 +1590,7 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
      &quot;currentPassword&quot;: &quot;${user_password}&quot;,&#xd;
-     &quot;newPassword&quot;: &quot;${__RandomString(12,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890)}&quot;&#xd;
+     &quot;newPassword&quot;: &quot;${__RandomString(12,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,user_password)}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -1865,8 +1865,8 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-     &quot;title&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890)}&quot;,&#xd;
-     &quot;description&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890)}&quot;,&#xd;
+     &quot;title&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,note_title)}&quot;,&#xd;
+     &quot;description&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,note_description)}&quot;,&#xd;
      &quot;category&quot;: &quot;a&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -1977,9 +1977,9 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-     &quot;title&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890)}&quot;,&#xd;
-     &quot;description&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890)}&quot;,&#xd;
-     &quot;category&quot;: &quot;${__RandomFromMultipleVars(cat1|cat2|cat3)}&quot;&#xd;
+     &quot;title&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,note_title)}&quot;,&#xd;
+     &quot;description&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,note_description)}&quot;,&#xd;
+     &quot;category&quot;: &quot;${__RandomFromMultipleVars(cat1|cat2|cat3,note_category)}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -2267,7 +2267,7 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -2605,7 +2605,7 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -3126,8 +3126,8 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-     &quot;title&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890)}&quot;,&#xd;
-     &quot;description&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890)}&quot;,&#xd;
+     &quot;title&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,note_title)}&quot;,&#xd;
+     &quot;description&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,note_description)}&quot;,&#xd;
      &quot;category&quot;: &quot;a&quot;,&#xd;
      &quot;completed&quot;: &quot;${note_completed_updated}&quot;&#xd;
 }</stringProp>
@@ -3239,9 +3239,9 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-     &quot;title&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890)}&quot;,&#xd;
-     &quot;description&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890)}&quot;,&#xd;
-     &quot;category&quot;: &quot;${__RandomFromMultipleVars(cat1|cat2|cat3)}&quot;,&#xd;
+     &quot;title&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,note_title)}&quot;,&#xd;
+     &quot;description&quot;: &quot;${__RandomString(6,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,note_description)}&quot;,&#xd;
+     &quot;category&quot;: &quot;${__RandomFromMultipleVars(cat1|cat2|cat3,note_category)}&quot;,&#xd;
      &quot;completed&quot;: &quot;${note_completed_updated}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -3360,7 +3360,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
@@ -3373,7 +3373,7 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -4211,7 +4211,7 @@
           </JSONPathAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="15_login_user_after_logout">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="15_login_user_after_logout" enabled="true">
           <stringProp name="HTTPSampler.domain">${base_url}</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -4234,7 +4234,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
@@ -4243,7 +4243,7 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>

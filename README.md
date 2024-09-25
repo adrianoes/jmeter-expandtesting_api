@@ -33,6 +33,7 @@ API testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-
 - [__javaScript](https://jmeter.apache.org/usermanual/functions.html#__javaScript)
 - [Jmeter 5.5 error with assertion value type, string not equal to int](https://stackoverflow.com/a/74537909/10519428)
 - [__RandomFromMultipleVars](https://jmeter.apache.org/usermanual/functions.html#__RandomFromMultipleVars)
+- [Handle negative cases in JMETER, for example my expected output response is 400](https://stackoverflow.com/a/59533081/10519428)
 
 # Tips:
 
