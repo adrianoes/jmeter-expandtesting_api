@@ -1,4 +1,4 @@
-# jmeter_expandtesting_api
+# jmeter-expandtesting_api
 
 API testing in [expandtesting](https://practice.expandtesting.com/notes/api/api-docs/). This project contains basic examples on how to use JMeter to test performance API tests. 
 
